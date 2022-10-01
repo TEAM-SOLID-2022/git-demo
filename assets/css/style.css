@@ -1,0 +1,53 @@
+#main {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+div > a {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+div > a:hover {
+  color: white;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+#para1 {
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#profile {
+  width: 1000px;
+  height: 500px;
+  margin: 50px;
+  padding-right: 50px;
+  border-radius: 4px;
+}
+#pic {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+}
+#sub {
+  margin-top: 20px;
+}
+#para2 {
+  margin: 100px 50px 50px 50px;
+  padding: 20px;
+  font-size: 24px;
+}
+#end {
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 24px;
+}
+#end {
+  background-color: gray;
+}
+#contact {
+  flex-direction: column;
+}
