@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Calculator App</title>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" id="result" placeholder="0" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="+" onclick="operate('+')" /></td>
+        <td><input type="button" value="-" onclick="operate('-')" /></td>
+        <td><input type="button" value="x" onclick="operate('x')" /></td>
+        <td><input type="button" value="÷" onclick="operate('÷')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="dsp('7')" /></td>
+        <td><input type="button" value="8" onclick="dsp('8')" /></td>
+        <td><input type="button" value="9" onclick="dsp('9')" /></td>
+        <td rowspan="4"><input type="button" value="=" onclick="calc()" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="dsp('4')" /></td>
+        <td><input type="button" value="5" onclick="dsp('5')" /></td>
+        <td><input type="button" value="6" onclick="dsp('6')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="dsp('1')" /></td>
+        <td><input type="button" value="2" onclick="dsp('2')" /></td>
+        <td><input type="button" value="3" onclick="dsp('3')" /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="dsp('0')" /></td>
+        <td><input type="button" value="." onclick="dsp('.')" /></td>
+        <td><input type="button" value="C" onclick="clr()" /></td>
+      </tr>
+    </table>
+
+    <script>
+      "use strict";
+      let display = document.getElementById("result");
+      let x = 0;
+      let isOperateClick = false;
+      let operation;
+
+      function dsp(val) {
+        if (isOperateClick == true) {
+          display.value = "0";
+          isOperateClick = false;
+        }
+        if (display.value == "0") {
+          display.value = "";
+        }
+        if(val!="." || !(display.value.includes("."))){
+            display.value += val;
+        }
+        }
+
+      function operate(sign) {
+        isOperateClick = true;
+        if (operation == "") {
+          operation = sign;
+        }
+        if (x != "") {
+          switch (operation) {
+            case "+":
+              x = parseFloat(display.value) + parseFloat(x);
+              break;
+            case "-":
+              x = parseFloat(x) - parseFloat(display.value);
+              break;
+            case "x":
+              x = parseFloat(x) * parseFloat(display.value);
+              break;
+            case "÷":
+              x = parseFloat(x) / parseFloat(display.value);
+              break;
+          }
+        } else if (display.value != "") {
+          x = display.value;
+        }
+        console.log(operation);
+        console.log(x);
+        operation = sign;
+        display.value = x;
+      }
+
+      function calc() {
+        operate(operation);
+        operation = "";
+        x = "";
+      }
+
+      function clr() {
+        display.value = "";
+        x = "";
+        operation = "";
+      }
+    </script>
+  </body>
+</html>
