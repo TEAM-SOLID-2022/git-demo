@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 let display = document.getElementById("result");
 let x = 0;
 let isOperateClick = false;
@@ -6,7 +6,7 @@ let operation;
 
 function dsp(val) {
   if (isOperateClick == true) {
-    display.value = "0";
+    display.value = "";
     isOperateClick = false;
   }
   if (display.value == "0") {

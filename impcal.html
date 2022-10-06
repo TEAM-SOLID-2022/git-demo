@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    
+  </head>
+  <body>
+    <div class="container main">
+        
+        <div class="haha">
+            <input type="text" id="result" placeholder="" readonly>
+        </div>
+        <div class="container sub">
+            <div class="d-flex factoring">
+               <div class="col"><button class="number plus" onclick="operate('+')">&#43;</button></div>
+               <div class="col"><button class="number plus" onclick="operate('-')">&#8722;</button></div>
+               <div class="col"><button class="number plus" onclick="operate('x')">&#215;</button></div>
+               <div class="col"><button class="number plus" onclick="operate('÷')">&#247;</button></div>
+            </div>
+            <div class="d-flex numeral">
+                
+               <div class="col">
+                  <div><button class="number" onclick="dsp('7')">7</button></div>
+                  <div><button class="number" onclick="dsp('4')">4</button></div>
+                  <div><button class="number" onclick="dsp('1')">1</button></div>
+                  <div><button class="number" onclick="dsp('0')">0</button></div>
+               </div>
+               <div class="col">
+                  <div><button class="number" onclick="dsp('8')">8</button></div>
+                  <div><button class="number" onclick="dsp('5')">5</button></div>
+                  <div><button class="number" onclick="dsp('2')">2</button></div>
+                  <div><button class="number" onclick="dsp('.')">.</button></div>
+               </div>
+               <div class="col">
+                  <div><button class="number" onclick="dsp('9')">9</button></div>
+                  <div><button class="number" onclick="dsp('6')">6</button></div>
+                  <div><button class="number" onclick="dsp('3')">3</button></div>
+                  <div><button class="number cancel" onclick="clr()">C</button></div>
+               </div>
+               <div class="col"><button class="equal" onclick="calc()">=</button>
+               </div>
+            </div>
+            
+          </div>
+        <div>
+    </div>
+    <script src="/assets/calc.js"></script>
+
+  </body>
+</html>  

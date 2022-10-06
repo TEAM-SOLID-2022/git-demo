@@ -1,0 +1,113 @@
+.main {
+    background-color: rgb(105, 105, 105);
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+    border-radius: 10px;
+    
+}
+
+.haha {
+    background-color: none;
+    
+    font-size: 45px;
+    height: 70px;
+    width: 302px;
+    display: flex;
+    justify-content: right;
+    align-items:center; 
+    padding-bottom: 5px;
+}
+
+#result {
+    background-color: rgba(128, 128, 128, 0);
+    color:white;
+    border-color: aliceblue;
+    width: 318px;
+    border-color: rgba(240, 248, 255, 0);
+    font-size: 55px;
+    padding: 0px;
+    display: flex;
+    text-align: right;
+    align-items:center;
+    transition: 0.20s;
+
+
+}
+.sub {
+   
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    
+}
+
+.kawaii {
+    background-color: greenyellow;
+    display: flex;
+
+}
+
+.numeral {
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.number {
+    height:75.5px;
+    width:75.5px;
+    border-radius: 50%;
+    border-color: rgb(150, 158, 170);;
+    border-width: 5px;
+    margin: 2px;
+    
+}
+
+.number:active {
+    border-color: rgb(214, 215, 218);
+    border-width: 5px;
+    
+}
+
+.equal {
+    height: 306px;
+    width: 75.5px;
+    border-radius: 37.75px;
+    border-color: rgb(150, 158, 170);
+    border-width: 5px;
+    margin: 2px;
+    background-color: rgb(224, 219, 155);
+    
+
+
+}
+
+.equal:active {
+    background-color: rgb(232, 228, 171);
+}
+
+.factoring {
+    text-align:center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.plus {
+    background-color: rgb(170, 206, 238);
+}
+
+.plus:active {
+    background-color: rgb(192, 220, 245);
+}
+
+.cancel {
+    background-color: rgb(208, 126, 126);
+}
+
