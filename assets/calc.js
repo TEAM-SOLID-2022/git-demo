@@ -43,7 +43,7 @@ function operate(sign) {
   console.log(operation);
   console.log(x);
   operation = sign;
-  display.value = x;
+  display.value = x.toFixed(3)  ;
 }
 
 function calc() {
