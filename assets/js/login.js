@@ -30,6 +30,15 @@ function login(e) {
     let uname = loginForm.uname.value
     let pword = loginForm.pwd.value
 
+    if (attempts >= MAX_ATTEMPTS) {
+        warningAlert.innerHTML = `Exceeded tries! Account is locked. Please try again in <strong> ${MAX_TIMEOUT - counter}</strong>s.`
+        warningAlert.classList.remove("d-none")
+        if (!isResetting) {
+            isResetting = true
+            timer = setInterval(incrementCounter, MAX_INTERVAL)
+        }
+        return
+    }
 
     if (uname === "" || uname === null) {
         warningAlert.innerText = "Enter Username"
@@ -43,15 +52,6 @@ function login(e) {
         return
     }
 
-    if (attempts >= MAX_ATTEMPTS) {
-        warningAlert.innerHTML = `Exceeded tries! Account is locked. Please try again in <strong> ${MAX_TIMEOUT - counter}</strong>s.`
-        warningAlert.classList.remove("d-none")
-        if (!isResetting) {
-            isResetting = true
-            timer = setInterval(incrementCounter, MAX_INTERVAL)
-        }
-        return
-    }
 
     // check if username and password are correct
     if (uname === USERNAME && pword === PASSWORD) {
