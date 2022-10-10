@@ -1,0 +1,68 @@
+{
+   "name": "John",
+    "age": 30,
+    "cars": [
+        { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+        { "name":"Fiat", "models":[ "500", "Panda" ] }
+    ],
+    "address": {
+        "street": "Main Street",
+        "number": 123,
+        "city": "New York"
+    },
+    "children": [
+        {
+            "name": "Mary",
+            "age": 10
+        },
+        {
+            "name": "Peter",
+            "age": 8
+        }
+    ],
+    "spouse": {
+        "name": "Jane",
+        "age": 28
+    },
+    "pets": [
+        {
+            "name": "Dog",
+            "age": 5
+        },
+        {
+            "name": "Cat",
+            "age": 3
+        }
+    ],
+    "siblings": [
+        {
+            "name": "Jane",
+            "age": 28
+        },
+        {
+            "name": "Peter",
+            "age": 25
+        }
+    ],
+    "parents": [
+        {
+            "name": "John",
+            "age": 60
+        },
+        {
+            "name": "Jane",
+            "age": 58
+        }
+    ],
+    "grandparents": [
+        {
+            "name": "John",
+            "age": 90
+        },
+        {
+            "name": "Jane",
+            "age": 88
+        }
+    ]
+}
